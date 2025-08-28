@@ -17,7 +17,7 @@ Resources:
         Statement:
           - Effect: Allow
             Principal: 
-              AWS: "arn:aws:cloudformation:us-east-1:590183734648:stack/my-sts-fun-stack/*"
+              AWS: "arn:aws:cloudformation:us-east-1:590183734648:user/sts-machine-user"
               #Service:
               #  - s3.amazonaws.com
             Action:
@@ -35,4 +35,5 @@ Resources:
                   !Sub "arn:aws:s3:::${BucketName}",
                   !Sub "arn:aws:s3:::${BucketName}/*"
                 ]
+
                 
